@@ -33,6 +33,7 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/moment'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -49,6 +50,10 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     baseURL: process.env.APP_HOST
+  },
+
+  moment: {
+    locales: ['ru'],
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

@@ -1,6 +1,10 @@
 <template>
-  <div>
-    <v-calendar />
+  <div class="h-screen bg-gray-100">
+    <div class="container mx-auto flex justify-center items-center">
+      <client-only>
+        <v-calendar :events="events" />
+      </client-only>
+    </div>
   </div>
 </template>
 
